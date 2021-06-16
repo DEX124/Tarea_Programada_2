@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Colaborador
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Colaborador\ here.\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/15/2021)\r\n
+comment1.params=
+comment1.target=Colaborador()
+comment2.params=id
+comment2.target=void\ asigneIDColabolador(int)
+comment3.params=nom
+comment3.target=void\ asigneNombreColabolador(java.lang.String)
+comment4.params=
+comment4.target=int\ muestreIDColaborador()
+comment5.params=
+comment5.target=java.lang.String\ muestreNombreColaborador()
+comment6.params=
+comment6.target=int\ muestreHorasLaborales()
+numComments=7
