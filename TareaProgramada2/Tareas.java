@@ -127,7 +127,7 @@ public class Tareas
 
     public String devuelvaFechaF()
     {
-        return fechaInicio;
+        return fechaFinal;
     }
 
     public void devuelvaResponsables()
@@ -182,37 +182,5 @@ public class Tareas
     public ArrayList devuelvaImpedimentos()
     {
         return impedimentos;
-    }
-
-    public static void main (String args[])
-    {
-        Tareas primeraTarea = new Tareas();
-
-        primeraTarea.asigneIDTarea(724);
-        primeraTarea.asigneNombreTarea("Tarea de Progra I");
-        primeraTarea.asigneFechas("Agosto","Diciembre");
- 
-        primeraTarea.asigneResponsable(7,"Valery");
-        primeraTarea.asigneResponsable(2,"Diego");
-        primeraTarea.asigneResponsable(15,"Seilyn");
-
-        primeraTarea.asigneHoras(27);
-        primeraTarea.asigneDinero(700);
-        primeraTarea.asigneEsfuerzo(5);
-        primeraTarea.asigneEstadoDeAvance(25);
-
-        primeraTarea.asigneRecursos(777,"Goma Loca",100);
-        
-        primeraTarea.asigneImpedimento("Falta de tiempo");
-
-        System.out.println("ID: "+primeraTarea.devuelvaID()+" Nombre: "+primeraTarea.devuelvaNombreT()+"\n"+"Fecha de Inicio: "+primeraTarea.devuelvaFechaI()+"\n"+"Fecha de fin: "+primeraTarea.fechaFinal+"\n");
-
-        primeraTarea.devuelvaResponsables();
-        System.out.println();
-        primeraTarea.devuelvaRecursosDisponibles();
-        
-        System.out.println("\n"+"Tiempo Estimado: \n"+primeraTarea.devuelvaTiempoEstimadoHRS()+" hrs"+"\n"+"Dinero: "+primeraTarea.devuelvaDinero()+"\nEsfuerzo: "+primeraTarea.devuelvaEsfuerzo()+"\n"+
-        "Estado de avance: "+primeraTarea.devuelvaEstadoDeAvance()+"%"+"\n"+"Dependecia: "+primeraTarea.devuelvaDependencia()+"\nTareas de las que depende: "+primeraTarea.devuelvaTareaDependiente()+"\n"+"Estado de la tarea: "+primeraTarea.devuelvaEstado()+"\n"+"Impedimentos: "+primeraTarea.devuelvaImpedimentos());
-
     }
 }

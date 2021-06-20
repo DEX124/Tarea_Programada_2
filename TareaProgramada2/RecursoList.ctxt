@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=RecursoList
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecursoList\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecursoList\ here.\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/19/2021)\r\n
 comment1.params=idr\ nombreRe\ porce
 comment1.target=void\ agregueRecurso(int,\ java.lang.String,\ int)
 numComments=2
