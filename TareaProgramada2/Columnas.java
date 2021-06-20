@@ -2,32 +2,17 @@
 /**
  * Write a description of class Columnas here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Diego Hernández Agüero B83716, Valery Campos Bermudez B91513, Seilyn Araya Rodríguez B90531)
+ * @version (v.1 06/19/2021)
  */
 public class Columnas
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Columnas
-     */
-    public Columnas()
+    String nombre [] = {"Por hacer","Haciendo", "Finalizado","Pausado","Abortado"};
+    String idColumnas [] = {"PH","H","F","P","A"};
+    TareasList tareasDeLasListas;
+    
+    public Columnas(TareasList listaDeTareas)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        tareasDeLasListas = listaDeTareas;
     }
 }
