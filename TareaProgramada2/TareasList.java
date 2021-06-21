@@ -20,7 +20,6 @@ public class TareasList extends ArrayList<Tareas>
         tarea.asigneEstadoDeAvance(porcentajeDeAvance);
         tarea.asigneDependencia(estado,tareaReq);
         tarea.asigneEstado(estad);
-
     }
     
     public void agregueResponsables(int idC, String nomCo)
