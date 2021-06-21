@@ -77,6 +77,11 @@ public class Lista
     {
         return descrip;
     }
+    
+    public TareasList devuelvaListaDeTareas()
+    {
+        return tareasDeLista;
+    }
 
     public void muestreTareas()
     {
@@ -107,22 +112,5 @@ public class Lista
             System.out.println("Estado actual de la tarea: "+tarea.devuelvaEstado()+"\nImpedimentos: "+tarea.devuelvaImpedimentos());
             System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         }
-    }
-
-    public static void main (String args[])
-    {
-        Lista nuevaLista = new Lista();
-        
-        nuevaLista.asigneIdLista(722);
-        nuevaLista.asigneNombreLista("Antonio");
-        nuevaLista.asigneDescrip("Ayuda mamá, ya estoy embotado");
-        nuevaLista.asigneTarea(07, "comer", "hoy","mañana", 27, 50000, 2, 3, false, null, "Finalizado");
-        nuevaLista.agregueTarea();
-        
-        
-        System.out.println("Id de la lista: "+nuevaLista.devuelvaIDLista()+"\nNombre de la lista: "+nuevaLista.devuelvaNombreLista()+"\n\n"+nuevaLista.devuelvaDescrip());
-        
-        nuevaLista.muestreTareas();
-        
     }
 }
