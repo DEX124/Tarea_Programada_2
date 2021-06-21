@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.target=HerramientaDeGestion
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ HerramientaDeGestion\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=HerramientaDeGestion()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ HerramientaDeGestion\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-numComments=3
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ HerramientaDeGestion\ here.\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/20/2021)\r\n
+comment1.params=listaDeColaboradores
+comment1.target=ColaboradorList\ creeResponsables(ColaboradorList)
+comment2.params=listaDeColaboradores
+comment2.target=ColaboradorList\ modifiqueColaborador(ColaboradorList)
+comment3.params=listaDeColaboradores
+comment3.target=ColaboradorList\ elimineResponsables(ColaboradorList)
+comment4.params=listaDeColaboradores
+comment4.target=void\ muestreResponsables(ColaboradorList)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
