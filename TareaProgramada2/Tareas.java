@@ -32,8 +32,10 @@ public class Tareas
         nombreTarea = "";
         fechaInicio = "";
         fechaFinal = "";
+        
         responsables  = new ColaboradorList();
-        tiempoEstimadoHRS = -1;
+        
+        tiempoEstimadoHRS = 0;
         dineroEstimado = 0;
         esfuerzo = 0;
         estadoDeAvance = 0;
