@@ -7,9 +7,9 @@
  */
 public class Columnas
 {
-    String nombre [] = {"Por hacer","Haciendo", "Finalizado","Pausado","Abortado"};
-    String idColumnas [] = {"PH","H","F","P","A"};
-    TareasList tareasDeLasListas;
+    String nombre [] = {"Por hacer","Haciendo", "Finalizado","Pausado","Abortado"}; //Almacena los nombre de a columna segun estado,
+    String idColumnas [] = {"PH","H","F","P","A"}; //Almacena los ID de la columna segun estado
+    TareasList tareasDeLasListas; //Enlista las tareas de la clase TareaList por columnas
     
     /**
      * Columnas: Organiza las tareas por columnas segun estado.

@@ -7,10 +7,10 @@
  */
 public class Lista
 {
-    int idLista;
-    String nombreLista;
-    String descrip;
-    TareasList tareasDeLista;
+    int idLista; //Recibe el id de la lista
+    String nombreLista; //Recibe el nombre de la lista de tareas
+    String descrip; //Recibe la descripcion de la lista de tareas
+    TareasList tareasDeLista; //Enlista las tareas
 
     /**
      * Lista: Se encarga de almacenar el nombre de la lista.

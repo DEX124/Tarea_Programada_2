@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class TareasList extends ArrayList<Tareas>
 {
-    Tareas tarea = new Tareas();
+    Tareas tarea = new Tareas(); //Almacena una tarea para la lista
 
     /**
      * asigne Datos: Se encarga de almacenar los datos por tarea.

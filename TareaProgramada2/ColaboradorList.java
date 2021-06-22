@@ -19,7 +19,12 @@ public class ColaboradorList extends ArrayList<Colaborador>
         nuevo.asigneNombreColabolador(nombreCo);
         add(nuevo);
     }
-
+    
+    /**
+     * elimineColaborador: metodo que se encarga de eliminar un 
+     * colaborador de la lista de los colaboradores,mediante
+     * si identificación o nombre
+     */
     public void elimineColaborador(ColaboradorList lista,int idc, String nomCo)
     {
         for(int i = 0; i < lista.size();i++){
@@ -30,6 +35,11 @@ public class ColaboradorList extends ArrayList<Colaborador>
         }
     }
 
+    /**
+     * modifiqueID: modifica el id del colaborador, cuando así se 
+     * requiera, recibiendo el parametro int idc, para buscarlo 
+     * la lista de coladoradores y que el usuario lo cambie.
+     */
     public void modifiqueID(ColaboradorList lista,int idc)
     {
         for(int i = 0; i < lista.size();i++){
@@ -64,6 +74,11 @@ public class ColaboradorList extends ArrayList<Colaborador>
         }
     }
 
+    /**
+     * modifiqueNombre: modifica el nombre del colaborador, cuando así se 
+     * requiera, recibiendo el parametro String nomCo, para buscarlo 
+     * la lista de coladoradores y que el usuario lo cambie.
+     */
     public void modifiqueNombre(ColaboradorList lista,String nomCo)
     {
         for(int i = 0; i < lista.size();i++){

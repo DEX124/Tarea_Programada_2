@@ -7,20 +7,21 @@ import java.util.ArrayList;
  */
 public class Tareas
 {
-    int idTareas;
-    String nombreTarea;
-    String fechaInicio;
-    String fechaFinal;
-    ColaboradorList responsables;
-    int tiempoEstimadoHRS;
-    int dineroEstimado;
-    int esfuerzo;
-    int estadoDeAvance;
-    boolean dependencia;
-    Tareas tareaRequerida;
-    RecursoList recursosDisponibles;
-    String estado;
-    ArrayList<String> impedimentos;
+    
+    int idTareas; //Almacena el id de la tarea proporcionado por el usuario.
+    String nombreTarea; //Almacena el nombre de la tarea proporcionado por el usuario.
+    String fechaInicio; //Almacena la fecha de inicio de la tarea proporcionado por el usuario.
+    String fechaFinal; //Almacena la fecha final de la tarea proporcionado por el usuario.
+    ColaboradorList responsables; //Almacena colaboradores de la lista a la tarea
+    int tiempoEstimadoHRS; //Almacena el tiempo estimado de la tarea proporcionado por el usuario.
+    int dineroEstimado; //Almacena el dinero estimado de la tarea proporcionado por el usuario.
+    int esfuerzo; //Almacena el esfuerzo estimado de la tarea proporcionado por el usuario.
+    int estadoDeAvance; //Almacena el estado de avance de la tarea proporcionado por el usuario.
+    boolean dependencia; //Almacena la dependencia con una tarea de otra
+    Tareas tareaRequerida; //Almacena la tarea dependiente de otra.
+    RecursoList recursosDisponibles; //Almacena un recurso a la tarea de la lista de recursos
+    String estado; //Almacena el estado de la tarea proporcionado por el usuario.
+    ArrayList<String> impedimentos; //Almacena una lista de impedimentos por tarea opcional proporcionado por el usuario
 
     /**
      * Tareas():  Es el constructor de objetos de la clase Tareas
