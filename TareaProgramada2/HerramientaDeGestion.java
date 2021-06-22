@@ -103,7 +103,7 @@ public class HerramientaDeGestion
 
         if(opcionPrincipal.compareToIgnoreCase("ID") == 0)
         {
-            Scanner scan = new Scanner(JOptionPane.showInputDialog(null, "Ingrese el ID del colabolador", "Borrado de colaborador", JOptionPane.INFORMATION_MESSAGE));
+            Scanner scan = new Scanner(JOptionPane.showInputDialog(null, "Ingrese el ID de la tarea", "Menú de modificación de la tarea", JOptionPane.INFORMATION_MESSAGE));
             int idT = scan.nextInt();
 
             String opcionesModificar[] = {"ID", "Nombre", "Fechas","Estimacion","Progreso de avance","Estado de la tarea","Volver atrás"};
@@ -116,7 +116,7 @@ public class HerramientaDeGestion
 
         if(opcionPrincipal.compareToIgnoreCase("Nombre") == 0)
         {
-            String nomT = JOptionPane.showInputDialog(null, "Ingrese el nombre del colabolador", "Borrado de colaborador", JOptionPane.INFORMATION_MESSAGE);
+            String nomT = JOptionPane.showInputDialog(null, "Ingrese el nombre de la tarea", "Menú de modificación de la tarea", JOptionPane.INFORMATION_MESSAGE);
             
             String opcionesModificar[] = {"ID", "Nombre", "Fechas","Estimacion","Progreso de avance","Estado de la tarea","Volver atrás"};
             String opcionAMod = (JOptionPane.showInputDialog(null, "¿Cuál de las siguientes opciones de la tarea desea modificar?", "Herramienta de modificación de tareas", JOptionPane.QUESTION_MESSAGE, null, opcionesModificar, opcionesModificar[0])).toString();
@@ -158,37 +158,24 @@ public class HerramientaDeGestion
 
     public void muestreTareas(TareasList listaDeTareas)
     {
-        System.out.println("Lista de tareas:");
-        for(Tareas tarea : listaDeTareas)
-        {
-            System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-            System.out.println("Identificador de la tarea: "+tarea.devuelvaID()+"\nNombre de la tarea: "+tarea.devuelvaNombreT()+"\nFecha de Inicio: "+tarea.devuelvaFechaI()+" Fecha Final: "+tarea.devuelvaFechaF()+"\nResponsables: \n");
-            tarea.devuelvaResponsables();
-            if(tarea.devuelvaTiempoEstimadoHRS()>0)
-            {
-                System.out.println("Tiempo estimado: "+tarea.devuelvaTiempoEstimadoHRS());
-            }
-            if(tarea.devuelvaDinero()>0)
-            {
-                System.out.println("Dinero estimado: "+tarea.devuelvaDinero());
-            }
-            System.out.println("Esfuerzo estimado: "+tarea.devuelvaEsfuerzo()+"\nPorcentaje de avanze: "+tarea.devuelvaEstadoDeAvance()+"%");
-            if(tarea.devuelvaDependencia())
-            {
-                System.out.println("La tarea es dependiente de la tarea: "+tarea.devuelvaTareaDependiente()); 
-            }else{
-                System.out.println("La tarea es independiente");
-            }
-
-            System.out.println("Recursos disponibles: \n");
-            tarea.devuelvaRecursosDisponibles();
-
-            System.out.println("Estado actual de la tarea: "+tarea.devuelvaEstado()+"\nImpedimentos: "+tarea.devuelvaImpedimentos());
-            System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- \n");
-
-        }
+        listaDeTareas.muestreTarea(listaDeTareas);
     }
 
+    public Lista creeLista(Lista listaPrincipal)
+    {
+        return listaPrincipal;
+    }
+    
+    public Lista modifiqueLista(Lista listaPrincipal)
+    {
+        return listaPrincipal;
+    }
+    
+    public Lista elimineLista(Lista listaPrincipal)
+    {
+        return listaPrincipal;
+    }
+    
     public static void main(String args[])
     {
         HerramientaDeGestion herramienta = new HerramientaDeGestion();
@@ -197,11 +184,34 @@ public class HerramientaDeGestion
 
         ColaboradorList listaGeneralResponsables = new ColaboradorList();
         TareasList listaDeTareas = new TareasList();
+        Lista listaPrincipal = new Lista();
 
         if(opcionPrincipal.compareToIgnoreCase("Listas")==0)
         {
             String menuDeOpcionesDeLista[] = {"Crear una lista", "Modificar una lista", "Eliminar una lista","Consultar una lista","Volver atrás"};
-            String opcionlista = (JOptionPane.showInputDialog(null, "¿Cuál de las siguientes opciones desea ejecutar?", "Herramienta de gestión de listas", JOptionPane.QUESTION_MESSAGE, null, menuDeOpcionesDeLista, menuDeOpcionesDeLista[0])).toString();
+            String opcionLista = "";
+            
+            do { opcionLista = (JOptionPane.showInputDialog(null, "¿Cuál de las siguientes opciones desea ejecutar?", "Herramienta de gestión de listas", JOptionPane.QUESTION_MESSAGE, null, menuDeOpcionesDeLista, menuDeOpcionesDeLista[0])).toString();
+
+                if(opcionLista.compareToIgnoreCase("Crear una lista") == 0)
+                {
+                    listaPrincipal = herramienta.creeLista(listaPrincipal);
+                }
+                if(opcionLista.compareToIgnoreCase("Modificar una lista") == 0)
+                {
+                    listaPrincipal = herramienta.modifiqueLista(listaPrincipal);
+                }
+                if(opcionLista.compareToIgnoreCase("Eliminar una lista") == 0)
+                {
+                    listaPrincipal = herramienta.elimineLista(listaPrincipal);
+                }
+                if(opcionLista.compareToIgnoreCase("Consultar una lista") == 0)
+                {
+                    herramienta.muestreTareas(listaDeTareas);
+                }
+            }while(opcionLista.compareToIgnoreCase("Volver atrás") != 0);
+        
+        
         }
 
         if(opcionPrincipal.compareToIgnoreCase("Tareas")==0)

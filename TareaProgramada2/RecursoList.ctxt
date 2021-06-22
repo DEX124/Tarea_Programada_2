@@ -1,6 +1,7 @@
 #BlueJ class context
 comment0.target=RecursoList
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ RecursoList\ here.\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/19/2021)\r\n
+comment0.text=\r\n\ RecursoList\:\ a\u00F1ade\ cada\ recurso\ a\ la\ lista\ de\ recursos\ .\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/19/2021)\r\n
 comment1.params=idr\ nombreRe\ porce
 comment1.target=void\ agregueRecurso(int,\ java.lang.String,\ int)
+comment1.text=\r\n\ agregueRecurso\:\ recibe\ los\ parametros\ int\ idr\ (identificador\ de\ recursos),\r\n\ \r\n\ string\ nombreRe\ (nombre\ del\ recurso),\ int\ porce\ (porcentaje\ necesario\ del\ recurso),\ para\ agregar\ un\ recurso\r\n\ al\ arreglo\ de\ recursos\ necesarios\ para\ realizar\ una\ tarea.\r\n
 numComments=2

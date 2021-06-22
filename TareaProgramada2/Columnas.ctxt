@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Columnas
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Columnas\ here.\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/19/2021)\r\n
+comment0.text=\r\n\ Columnas\:\ Muestra\ por\ columnas\ el\ estado\ de\ las\ tareas\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/20/2021)\r\n
 comment1.params=listaDeTareas
 comment1.target=Columnas(TareasList)
+comment1.text=\r\n\ Columnas\:\ Organiza\ las\ tareas\ por\ columnas\ segun\ estado.\r\n\r\n
 comment2.params=
 comment2.target=void\ imprimaEnColumnas()
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
-numComments=4
+comment2.text=\r\n\ imprimaEnColumnas\:\ Muestra\ las\ tareas\ por\ lista\ en\ columnas\ por\ estado.\r\n\r\n
+numComments=3

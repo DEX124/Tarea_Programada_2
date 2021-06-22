@@ -2,13 +2,16 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 /**
- * Write a description of class ColaboradorList here.
+ *  ColaboradorList es la clase encargada de añadir colaboradores a la lista de colaboradores.
  *
  * @author (Diego Hernández Agüero B83716, Valery Campos Bermudez B91513, Seilyn Araya Rodríguez B90531)
  * @version (v.1 06/19/2021)
  */
 public class ColaboradorList extends ArrayList<Colaborador>
 {
+    /**
+     *agregueColaborador: añade el nombre del colaborador y  su numero de identificación a la lista de colaboradores.
+     */
     public void agregueColaborador(int idc, String nombreCo)
     {
         Colaborador nuevo = new Colaborador();

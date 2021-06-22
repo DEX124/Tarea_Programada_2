@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Columnas here.
+ * Columnas: Muestra por columnas el estado de las tareas
  *
  * @author (Diego Hernández Agüero B83716, Valery Campos Bermudez B91513, Seilyn Araya Rodríguez B90531)
  * @version (v.1 06/20/2021)
@@ -10,12 +10,20 @@ public class Columnas
     String nombre [] = {"Por hacer","Haciendo", "Finalizado","Pausado","Abortado"};
     String idColumnas [] = {"PH","H","F","P","A"};
     TareasList tareasDeLasListas;
-
+    
+    /**
+     * Columnas: Organiza las tareas por columnas segun estado.
+     *
+     */
     public Columnas(TareasList listaDeTareas)
     {
         tareasDeLasListas = listaDeTareas;
     }
 
+    /**
+     * imprimaEnColumnas: Muestra las tareas por lista en columnas por estado.
+     *
+     */
     public void imprimaEnColumnas()
     {
         System.out.println("Por hacer:");
@@ -71,22 +79,6 @@ public class Columnas
                 }
         }
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-    }
-
-    public static void main (String args[])
-    {
-        Lista nuevaLista = new Lista();
-
-        nuevaLista.asigneIdLista(722);
-        nuevaLista.asigneNombreLista("Antonio");
-        nuevaLista.asigneDescrip("Ayuda mamá, ya estoy embotado");
-        nuevaLista.asigneTarea(07, "comer", "hoy","mañana", 27, 50000, 2, 3, false, null, "Finalizado");
-        nuevaLista.agregueTarea();
-
-        System.out.println("Id de la lista: "+nuevaLista.devuelvaIDLista()+"\nNombre de la lista: "+nuevaLista.devuelvaNombreLista()+"\n\n"+nuevaLista.devuelvaDescrip());
-        nuevaLista.muestreTareas();
-        Columnas columnasDeTareas = new Columnas(nuevaLista.devuelvaListaDeTareas());
-        columnasDeTareas.imprimaEnColumnas();
     }
 }
 

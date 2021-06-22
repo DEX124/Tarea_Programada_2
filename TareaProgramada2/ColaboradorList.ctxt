@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=ColaboradorList
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ColaboradorList\ here.\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/19/2021)\r\n
+comment0.text=\r\n\ \ ColaboradorList\ es\ la\ clase\ encargada\ de\ a\u00F1adir\ colaboradores\ a\ la\ lista\ de\ colaboradores.\r\n\r\n\ @author\ (Diego\ Hern\u00E1ndez\ Ag\u00FCero\ B83716,\ Valery\ Campos\ Bermudez\ B91513,\ Seilyn\ Araya\ Rodr\u00EDguez\ B90531)\r\n\ @version\ (v.1\ 06/19/2021)\r\n
 comment1.params=idc\ nombreCo
 comment1.target=void\ agregueColaborador(int,\ java.lang.String)
+comment1.text=\r\nagregueColaborador\:\ a\u00F1ade\ el\ nombre\ del\ colaborador\ y\ \ su\ numero\ de\ identificaci\u00F3n\ a\ la\ lista\ de\ colaboradores.\r\n
 comment2.params=lista\ idc\ nomCo
 comment2.target=void\ elimineColaborador(ColaboradorList,\ int,\ java.lang.String)
 comment3.params=lista\ idc
