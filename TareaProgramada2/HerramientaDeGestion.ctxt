@@ -34,4 +34,5 @@ comment8.target=void\ muestreTareas(TareasList)
 comment8.text=\r\n\ muestreTareas\:\ imprime\ en\ el\ terminal\ toda\ la\ informaci\u00F3n\ de\ las\ tareas\ que\ ya\ se\ ha\ ingresado\ al\ sistema.\r\n\ \r\n
 comment9.params=listaPrincipal
 comment9.target=Lista\ creeLista(Lista)
+comment9.text=\r\n\ creeLista\:\ Asigna\ los\ datos\ dados\ por\ el\ usuario\ para\ la\ lista\r\n\ \r\n\ @param\ listaPrincipal\:\ Recibe\ una\ lista\ en\ blanco\r\n\ \r\n
 numComments=13

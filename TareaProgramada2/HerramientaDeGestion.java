@@ -203,8 +203,33 @@ public class HerramientaDeGestion
         listaDeTareas.muestreTarea(listaDeTareas);
     }
 
+    /**
+     * creeLista: Asigna los datos dados por el usuario para la lista
+     * 
+     * @param listaPrincipal: Recibe una lista en blanco
+     * 
+     */
     public Lista creeLista(Lista listaPrincipal)
     {
+        Scanner scan = new Scanner(JOptionPane.showInputDialog(null, "Ingrese el ID de la tarea lista", "Creación de una nueva lista", JOptionPane.INFORMATION_MESSAGE));
+        int idLis = scan.nextInt();
+        String nomLis = JOptionPane.showInputDialog(null, "Ingrese el nombre de la tarea lista", "Creación de una nueva lista", JOptionPane.INFORMATION_MESSAGE);
+        
+        String si_no[] = {"Sí","No"};
+        String descrip = (JOptionPane.showInputDialog(null, "¿Desea agregar una descripción? (Sí/No)", "Creación de una nueva lista", JOptionPane.INFORMATION_MESSAGE, null, si_no, si_no[0])).toString();
+        if(descrip.compareToIgnoreCase("Sí") == 0)
+        {
+            descrip = JOptionPane.showInputDialog(null, "Ingrese la descripción la nueva tarea", "Creación de una nueva lista", JOptionPane.INFORMATION_MESSAGE);
+        }
+        if(descrip.compareToIgnoreCase("No") == 0)
+        {
+            descrip = "";
+        }
+        
+        listaPrincipal.asigneIdLista(idLis);
+        listaPrincipal.asigneNombreLista(nomLis);
+        listaPrincipal.asigneDescrip(descrip);
+        
         return listaPrincipal;
     }
 
@@ -258,6 +283,7 @@ public class HerramientaDeGestion
             }while(opcionLista.compareToIgnoreCase("Volver atrás") != 0);
 
         }
+        
         if(opcionPrincipal.compareToIgnoreCase("Tareas")==0)
         {
             String menuDeOpcionesDeTareas[] = {"Crear una tarea", "Modificar una tarea", "Eliminar una tarea","Consultar una tarea","Volver atrás"};
